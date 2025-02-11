@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day in Buffalo</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Danaya and Joshua in Buffalo</h1>
+    </header>
+
+    <main>
+        <!-- Map Container -->
+        <div id="map"></div>
+        
+        <!-- Location Info Panel -->
+        <div id="location-info" class="hidden">
+            <button id="close-info" aria-label="Close">×</button>
+            <h2 id="location-title"></h2>
+            <div id="location-images" class="image-gallery"></div>
+            <p id="location-description"></p>
+        </div>
+    </main>
+
+    <!-- Load locations data first -->
+    <script src="locations.js"></script>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Custom map JS -->
+    <script src="map.js"></script>
+</body>
+</html>
