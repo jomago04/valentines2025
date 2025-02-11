@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentine's Day in Buffalo</title>
-    
-    <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-    
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,10 +13,17 @@
     </header>
 
     <main>
-        <!-- Map Container -->
         <div id="map"></div>
+
+        <div id="welcome-info" class="info-panel">
+            <button id="welcome-close" aria-label="Close">×</button>
+            <h2 id="welcome-title">welcome danaya! 💕</h2>
+            <div id="welcome-content">
+                <p>i love you so much and im excited to show you what ive been working on. click the bubbles on the map and you can view a few photos of us from that place. there are 10 total locations so i hope you find them all and enjoy! i love you. <3</p>
+                <button id="start-exploring" class="explore-button">Start Exploring</button>
+            </div>
+        </div>
         
-        <!-- Location Info Panel -->
         <div id="location-info" class="hidden">
             <button id="close-info" aria-label="Close">×</button>
             <h2 id="location-title"></h2>
@@ -29,13 +32,8 @@
         </div>
     </main>
 
-    <!-- Load locations data first -->
     <script src="locations.js"></script>
-    
-    <!-- Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    
-    <!-- Custom map JS -->
     <script src="map.js"></script>
 </body>
 </html>
